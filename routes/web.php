@@ -12,3 +12,7 @@ Route::apiResource('courses', CourseController::class);
 Route::get('/test', function () {
     return response()->json(['message' => 'API OK!']);
 });
+
+Route::get('/', function () {
+    return view('welcome');
+});
